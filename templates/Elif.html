@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% if a > b %}
+        <center><h1>Inside True Block</h1></center>
+        {% if a > c %}
+        <center><h2>B is Max</h2></center>
+        {% endif %}
+    {% else %}
+        {% if b > c%}
+        <center><h1>Inside False Block</h1></center>
+        {% else %}
+        <center><h2>C is Max</h2></center>
+        {% endif %}
+    {% endif %}
+</body>
+</html>
